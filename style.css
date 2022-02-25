@@ -16,6 +16,10 @@ body {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     background: #EEE;
     box-shadow: 0 0 29px gray;
@@ -23,21 +27,24 @@ nav {
 
 .page-header {
     padding-top: 7rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     font-size: 1.25rem;
     color: black;
 }
 
-.about {
-    margin-top: 10rem;
+#about2{
+    margin-bottom: 5rem;
 }
 
 #about {
-    margin-top: 12rem;
+    margin-top: 1em;
+}
+
+.about-text{
+    padding-top: 5rem;
 }
 
 #gallery {
-    margin-top: 20rem;
     background-color: #CDDEFF;
 }
 
@@ -78,7 +85,7 @@ nav {
 }
 
 #work {
-    margin: 120px 0;
+    margin: 2rem 0;
 }
 
 .work-image {
@@ -134,4 +141,44 @@ nav {
 
 .work-title {
     background-color: #CDDEFF;
+}
+
+.contact-box {
+    background-color: #EEF2FF;
+    border: 1px solid #ddd;
+    padding: 50px 15px;
+    height: 250px;
+    margin-bottom: 25px;
+    margin-top: 1.5rem;
+    transition: all 0.4s ease-out;
+    border-radius: 15px;
+}
+
+.contact-content {
+    margin: 15px;
+}
+
+.contact-title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.contact-box:hover {
+    box-shadow: 0 0 21px 0px #FF5959,9.3;
+}
+
+@media (max-width:600px) {
+    .header-text .about-text {
+        margin: 30px;
+        text-align: center;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .about-img {
+        display: none;
+    }
 }
