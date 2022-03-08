@@ -50,6 +50,14 @@ nav {
     background-color: #CDDEFF;
 }
 
+#login, #signup, #film {
+    padding-top: 20px;
+}
+
+#e-commerce {
+    padding: auto;
+}
+
 .single-gallery {
     background-color: #548CFF;
     border: 1px solid #CDDEFF;
@@ -84,38 +92,37 @@ nav {
 }
 
 
-.work-image {
-    padding-left: 0;
-    padding-right: 0;
-    height: 300px;
-    width: 300px;
-}
+
+
 
 .single-work {
     position: relative;
 }
 
 .single-work .work-image img {
-    height: 100%;
+    width: 100%;
+}
+
+.work-image {
+    visibility: visible;
 }
 
 .work-overlay{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 300px;
-    background-color: #5D8BF4;
-    color: #0E185F;
+    top: 90px;
+    height: 50%;
+    width: 100%;
+    color: #EFFFFD;
     opacity: 0;
     visibility:hidden;
     transition: all 0.4s ease-out;
 }
 
 .work-overlay .work-content{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 0;
+    width: 100%;
     transform: translateY(-50%);
 }
 
@@ -125,7 +132,7 @@ nav {
     transform: translateY(-100%);
     margin-bottom: 5px;
     transition: all 0.4s ease-out;
-    opacity: 1;
+    opacity: 0;
 }
 
 .single-work:hover .work-overlay {
@@ -139,7 +146,7 @@ nav {
 }
 
 .work-title {
-    background-color: #EFFFFD;
+    background-color: #5D8BF4;
     padding: 15px;
 }
 
